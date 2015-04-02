@@ -1,0 +1,115 @@
+body {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+border * {
+  box-sizing: border-box;
+}
+
+#header-section {
+  border-bottom: 2px solid #db2927;
+  position: relative;
+  padding: .5em 1em;
+}
+#header-logo {
+  display: inline-block;
+}
+
+#contact {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font: 13px black tahoma
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #045198;
+}
+
+#contact ul li {
+  display: inline-block;
+  list-style: none;
+  margin: auto 4px;
+}
+
+#container {
+  width: 500px;
+  margin: 1em auto;
+}
+
+#form-box {
+  width: 500px;
+  /*margin: 1em auto;*/
+  background-color: #ececec;
+  border-color: #bcbcbc;
+  padding: 20px 25px;
+}
+
+.form-section {
+  vertical-align: center;
+  margin: 5px auto;
+}
+
+.form-section div {
+  display: inline;
+}
+
+.form-section>label {
+  padding-top: .5em; 
+  width: 8em; 
+  text-align: right; 
+  float: left; 
+  font: 14px black tahoma;
+  padding-right: 20px;
+}
+
+/*.form-section input:not(.gender-check)*/
+
+.form-section input:not(.gender-check) {
+  height: 25px;
+}
+.form-section .user-input {
+  background-color: #fff;
+  border-color: #b9b9b9;
+  width: 360px;
+}
+
+#container h5 {
+  font: 18px tahoma;
+  color: #2c286d;
+  margin: 0 auto;
+}
+
+.form-text {
+  font: 13px tahoma;
+  color: #6f6f6f;
+}
+
+textarea.user-input {
+  height: 135px;
+}
+
+#date-group select {
+  width: 110px;
+  font: 13px tahoma;
+
+  color: #6f6f6f;
+}
+
+#date-group select:nth-child(n+2) {
+  margin-left: 1em;
+}
+
+#submitBtn {
+  background-color: #dc2927;
+  border-color: #a10200;
+  width: 130px;
+  height: 32px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  margin-left: 9.4em;
+}

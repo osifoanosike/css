@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="view.css" rel="stylesheet" type="text/csss"/>
+    <title>Vinsol - Empowering Solutions</title>
+  </head>
+  <body>
+    <header id="header-section">
+      <div id="header-logo">
+        <img src="images/vinsol-logo.png" />
+      </div>
+      <section id="contact">
+        <ul>
+          <li>Email us at: <a class="contact-link" href="mailto:sales@vinsol.com">sales@vinsol.com</a></li>
+          <li>Skype: <a class="contact-link" href="http://skype.com/user/vinsol" target="blank">Vinsol</a></li>
+        </ul>
+      </section>
+    </header>
+    <section id="container">
+      <h5>Please fill the form below</h5>
+      <form id="form-box">
+        <div class="form-section">
+          <label for="firstname">Firstname</label>
+          <input class="user-input" id="firstname" type="text"/>
+        </div>
+
+        <div class="form-section">
+          <label for="lastname">Last name</label>
+          <input class="user-input" id="lastname" type="text"/>
+        </div>
+
+        <div class="form-section">
+          <label for="email">Email Address</label>
+          <input class="user-input" id="email" type="email"/>
+        </div>
+
+        <div class="form-section">
+          <label for="password">Password</label>
+          <input class="user-input" id="password" type="password"/>
+        </div>
+
+        <div class="form-section ">
+          <label for="password">Gender</label>
+          <span>
+            <input class="gender-check" id="male_chk" value="male" name="gender" type="radio"/>
+            <label class="form-text">Male</label>
+          </span>
+          
+          <span>
+            <input id="female_chk"  class="gender-check" value="female" name="gender" type="radio"/>
+            <label class="form-text">Female</label>
+          </span>         
+        </div>
+
+        <div class="form-section">
+          <label>Date of Birth</label>
+          <div id="date-group">
+            <select id="dob-day">
+              <option selected>DD</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+
+            <select id="dob-month">
+              <option selected>MM</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+
+            <select id="dob-month">
+              <option selected>YY</option>
+              <option>15</option>
+              <option>14</option>
+              <option>13</option>
+              <option>12</option>
+              <option>11</option>
+              <option>10</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <label for="address">Address</label>
+          <textarea id="address" class="user-input" cols="50" rows="15"></textarea>
+        </div>
+
+        <div class="form-section">
+          <input id="submitBtn" type="submit" value="Submit Details"/>
+        </div>
+      </form>
+    </section>
+    <footer></footer>
+  </body>
+</html>
