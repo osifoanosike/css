@@ -7,14 +7,20 @@ header {
   margin: 2em;
 }
 
-#main-menu {
-  margin: 0;
-  padding: 0;
-  /*border-bottom: 1px solid #6d6d6d;*/
+.parent-list > a {
   display: inline-block;
-  position: absolute;
+  height: 37px;
+  font: 18px Georgia;
+  color: black;
+  background-color: #cfcfcf;
+  padding: 0 20px;
+  border: 1px solid #cfcfcf;
 }
 
+li > a {
+  text-decoration: none;
+  display: inline-block;
+}
 
 #main-menu li {
   position: relative;
@@ -24,47 +30,31 @@ header {
 #main-menu > li {
   display: inline-block;
   float: left;
-  height: 37px;
-  background-color: #cfcfcf;
-  font: 18px Georgia;
-  color: black;
-  padding: 0 20px;
-  border: 1px solid #cfcfcf;
+  border-bottom: 1px solid #6d6d6d;
+  z-index: 5
+}
+#main-menu > li:hover {
+   border-bottom: 1px solid #fff;
 }
 
-#main-menu > li > span {
-  display: inline-block;
-}
-
-#main-menu::after {
-  visibility: hidden;
-  display: block;
-  content: "";
-  clear: both;
-  height: 0;
-}
-
-#main-menu li:nth-child(n+2) {
+#main-menu > li:nth-child(n+2) a {
   margin-left: 2px;
 }
 
-#main-menu>li:hover {
+#main-menu > li:nth-child(n+2) ul {
+  left: 2px;
+}
+
+#main-menu > li:hover > a {
   font: 18px italic Georgia;
   color: #8c8c8c;
   background-color: #fff;
   border: 1px solid #6d6d6d;
-  border-bottom: none;
+  border-bottom: 1px solid #fff;;
 }
 
 #main-menu>li:hover > ul {
   display: inherit;
-}
-
-#main-menu ul {
-  display: none;
-  position: absolute;
-  top:36px;
-  left: -1px;
 }
 
 .sub-menu {
@@ -73,18 +63,21 @@ header {
   padding: 10px;
   background-color: #fff;
   width: 200px;
-  border-top: none;
+  display: none;
+  position: absolute;
+  top: 38px;
+  z-index: -3;
 }
 
-.sub-menu li {
+.sub-menu a {
+  display: block;
   font: 14px italic Georgia;
   color: #000;
   padding: 5px 0; 
 }
 
-.sub-menu li:hover {
+.sub-menu a:hover {
   color: #bd0707;
-  cursor: pointer;
 }
 
 .sub-menu li {
