@@ -10,24 +10,24 @@ body * {
 
 header {
 	background: #b2e7ff;
-	font: tahoma;
-	font-size: 24px;
+	font: 24px tahoma;
 	color: black;
 	text-align: center;
 	border-bottom: 2px solid #0ab1ff; 
 	padding: 0.7rem;
-	height: 15%
 }
 
 #content {
+	background-color: #0ab1ff;
 	position: relative;
 }
 
 #sidebar {
 	background: #0ab1ff;
-	padding: 25px 10px;
+	padding: 20px 10px;
 	float: left;
 	width:20%;
+	position: relative;
 }
 
 #menu * {
@@ -45,15 +45,13 @@ header {
 	margin: .5em auto;
 }
 
-#sidebar, #main {
-	height: 70%;
-}
 
 #main {
 	background-color: #ededed;
 	padding: 2em; 
 	float: left;
 	width: 80%;
+	position: relative;
 }
 
 #main p {
